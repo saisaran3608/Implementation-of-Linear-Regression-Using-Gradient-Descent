@@ -58,14 +58,12 @@ for _ in range(epochs):
 # Plots
 plt.figure(figsize=(12, 5))
 
-# 1️) Loss vs Iterations
 plt.subplot(1, 2, 1)
 plt.plot(losses, color="blue")
 plt.xlabel("Iterations")
 plt.ylabel("Loss (MSE)")
 plt.title("Loss vs Iterations")
 
-# 2️) Regression Line
 plt.subplot(1, 2, 2)
 plt.scatter(x, y, color="red", label="Data")
 plt.plot(x, w * x + b, color="green", label="Regression Line")
