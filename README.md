@@ -27,15 +27,12 @@ RegisterNumber:  212225220103
 import numpy as np
 import matplotlib.pyplot as plt
 
-# -----------------------
+
 # Data
-# -----------------------
 x = np.array([1, 2, 3, 4, 5], dtype=float)
 y = np.array([2, 4, 6, 8, 10], dtype=float)
 
-# -----------------------
 # Parameters
-# -----------------------
 w = 0.0
 b = 0.0
 alpha = 0.01
@@ -44,9 +41,7 @@ n = len(x)
 
 losses = []
 
-# -----------------------
 # Gradient Descent
-# -----------------------
 for _ in range(epochs):
     y_hat = w * x + b
 
@@ -60,9 +55,7 @@ for _ in range(epochs):
     w -= alpha * dw
     b -= alpha * db
 
-# -----------------------
 # Plots
-# -----------------------
 plt.figure(figsize=(12, 5))
 
 # 1️) Loss vs Iterations
